@@ -1,0 +1,157 @@
+[debug] [2021-09-15T22:51:08.988Z] ----------------------------------------------------------------------
+[debug] [2021-09-15T22:51:08.990Z] Command:       /usr/local/bin/node /usr/local/bin/firebase emulators:start
+[debug] [2021-09-15T22:51:08.991Z] CLI Version:   9.16.5
+[debug] [2021-09-15T22:51:08.991Z] Platform:      linux
+[debug] [2021-09-15T22:51:08.991Z] Node Version:  v15.4.0
+[debug] [2021-09-15T22:51:08.998Z] Time:          Wed Sep 15 2021 17:51:08 GMT-0500 (Central Daylight Time)
+[debug] [2021-09-15T22:51:08.998Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-09-15T22:51:09.077Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-09-15T22:51:09.077Z] > authorizing via signed-in user (devin.levine1@gmail.com)
+[info] i  emulators: Starting emulators: auth, functions, firestore, hosting, pubsub, storage {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: auth, functions, firestore, hosting, pubsub, storage"}}
+[debug] [2021-09-15T22:51:09.100Z] [hub] writing locator at /tmp/hub-sports-bet-94b22.json
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: database {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mdatabase\u001b[22m"}}
+[info] ✔  functions: Using node@15 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@15 from host."}}
+[debug] [2021-09-15T22:51:09.169Z] defaultcredentials: writing to file /root/.config/firebase/devin_levine1_gmail.com_application_default_credentials.json
+[debug] [2021-09-15T22:51:09.196Z] Setting GAC to /root/.config/firebase/devin_levine1_gmail.com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /root/.config/firebase/devin_levine1_gmail.com_application_default_credentials.json"}}
+[debug] [2021-09-15T22:51:09.199Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/sports-bet-94b22/adminSdkConfig [none]
+[debug] [2021-09-15T22:51:09.450Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/sports-bet-94b22/adminSdkConfig 200
+[debug] [2021-09-15T22:51:09.451Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/sports-bet-94b22/adminSdkConfig {"projectId":"sports-bet-94b22","storageBucket":"sports-bet-94b22.appspot.com","locationId":"us-central"}
+[debug] [2021-09-15T22:51:09.470Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2021-09-15T22:51:09.471Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2021-09-15T22:51:09.471Z] Starting Firestore Emulator with command {"binary":"java","args":["-Djava.net.preferIPv4Stack=true","-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","/root/.cache/firebase/emulators/cloud-firestore-emulator-v1.13.1.jar","--host","127.0.0.1","--port",8080,"--rules","/mnt/c/Users/devin/OneDrive/Desktop/react/sports-bet/firestore.rules","--functions_emulator","127.0.0.1:5001"],"optionalArgs":["port","webchannel_port","host","rules","functions_emulator","seed_from_export"],"joinArgs":false} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Djava.net.preferIPv4Stack=true\",\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"/root/.cache/firebase/emulators/cloud-firestore-emulator-v1.13.1.jar\",\"--host\",\"127.0.0.1\",\"--port\",8080,\"--rules\",\"/mnt/c/Users/devin/OneDrive/Desktop/react/sports-bet/firestore.rules\",\"--functions_emulator\",\"127.0.0.1:5001\"],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"functions_emulator\",\"seed_from_export\"],\"joinArgs\":false}"}}
+[info] i  firestore: Firestore Emulator logging to firestore-debug.log {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator logging to \u001b[1mfirestore-debug.log\u001b[22m"}}
+[debug] [2021-09-15T22:51:11.250Z] Sep 15, 2021 5:51:11 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start
+INFO: Started WebSocket server on ws://127.0.0.1:49297
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Sep 15, 2021 5:51:11 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start\nINFO: Started WebSocket server on ws://127.0.0.1:49297\n"}}
+[debug] [2021-09-15T22:51:11.277Z] API endpoint: http://127.0.0.1:8080
+If you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:
+
+   export FIRESTORE_EMULATOR_HOST=127.0.0.1 {"metadata":{"emulator":{"name":"firestore"},"message":"API endpoint: http://127.0.0.1:8080\nIf you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:\n\n   export FIRESTORE_EMULATOR_HOST=127.0.0.1"}}
+[debug] [2021-09-15T22:51:11.277Z] :8080
+
+Dev App Server is now running.
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":":8080\n\nDev App Server is now running.\n\n"}}
+[debug] [2021-09-15T22:51:13.737Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"pubsub"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2021-09-15T22:51:13.737Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"pubsub"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2021-09-15T22:51:13.737Z] Starting Pub/Sub Emulator with command {"binary":"/root/.cache/firebase/emulators/pubsub-emulator-0.1.0/pubsub-emulator/bin/cloud-pubsub-emulator","args":["--host=127.0.0.1","--port=5005"],"optionalArgs":["port","host"],"joinArgs":true} {"metadata":{"emulator":{"name":"pubsub"},"message":"Starting Pub/Sub Emulator with command {\"binary\":\"/root/.cache/firebase/emulators/pubsub-emulator-0.1.0/pubsub-emulator/bin/cloud-pubsub-emulator\",\"args\":[\"--host=127.0.0.1\",\"--port=5005\"],\"optionalArgs\":[\"port\",\"host\"],\"joinArgs\":true}"}}
+[info] i  pubsub: Pub/Sub Emulator logging to pubsub-debug.log {"metadata":{"emulator":{"name":"pubsub"},"message":"Pub/Sub Emulator logging to \u001b[1mpubsub-debug.log\u001b[22m"}}
+[debug] [2021-09-15T22:51:14.047Z] This is the Google Pub/Sub fake.
+ {"metadata":{"emulator":{"name":"pubsub"},"message":"This is the Google Pub/Sub fake.\n"}}
+[debug] [2021-09-15T22:51:14.048Z] Implementation may be incomplete or differ from the real system.
+ {"metadata":{"emulator":{"name":"pubsub"},"message":"Implementation may be incomplete or differ from the real system.\n"}}
+[debug] [2021-09-15T22:51:14.104Z] Sep 15, 2021 5:51:14 PM com.google.cloud.pubsub.testing.v1.Main main
+INFO: IAM integration is disabled. IAM policy methods and ACL checks are not supported
+ {"metadata":{"emulator":{"name":"pubsub"},"message":"Sep 15, 2021 5:51:14 PM com.google.cloud.pubsub.testing.v1.Main main\nINFO: IAM integration is disabled. IAM policy methods and ACL checks are not supported\n"}}
+[debug] [2021-09-15T22:51:14.776Z] Sep 15, 2021 5:51:14 PM io.gapi.emulators.netty.NettyUtil applyJava7LongHostnameWorkaround
+INFO: Applied Java 7 long hostname workaround.
+ {"metadata":{"emulator":{"name":"pubsub"},"message":"Sep 15, 2021 5:51:14 PM io.gapi.emulators.netty.NettyUtil applyJava7LongHostnameWorkaround\nINFO: Applied Java 7 long hostname workaround.\n"}}
+[debug] [2021-09-15T22:51:14.853Z] Sep 15, 2021 5:51:14 PM com.google.cloud.pubsub.testing.v1.Main main
+INFO: Server started, listening on 5005
+ {"metadata":{"emulator":{"name":"pubsub"},"message":"Sep 15, 2021 5:51:14 PM com.google.cloud.pubsub.testing.v1.Main main\nINFO: Server started, listening on 5005\n"}}
+[debug] [2021-09-15T22:51:15.096Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"storage"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2021-09-15T22:51:15.243Z] Sep 15, 2021 5:51:15 PM io.gapi.emulators.grpc.GrpcServer$3 operationComplete
+INFO: Adding handler(s) to newly registered Channel.
+ {"metadata":{"emulator":{"name":"pubsub"},"message":"Sep 15, 2021 5:51:15 PM io.gapi.emulators.grpc.GrpcServer$3 operationComplete\nINFO: Adding handler(s) to newly registered Channel.\n"}}
+[debug] [2021-09-15T22:51:15.471Z] Temp file directory for storage emulator: /tmp/firebase/storage/blobs {"metadata":{"emulator":{"name":"storage"},"message":"Temp file directory for storage emulator: /tmp/firebase/storage/blobs"}}
+[debug] [2021-09-15T22:51:16.722Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/sports-bet-94b22/sites 
+[debug] [2021-09-15T22:51:17.094Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/sports-bet-94b22/sites 200
+[debug] [2021-09-15T22:51:17.095Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/sports-bet-94b22/sites {"sites":[{"name":"projects/629141819373/sites/sports-bet-94b22","defaultUrl":"https://sports-bet-94b22.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2021-09-15T22:51:17.096Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/sports-bet-94b22/webApps/-/config [none]
+[debug] [2021-09-15T22:51:17.610Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/sports-bet-94b22/webApps/-/config 200
+[debug] [2021-09-15T22:51:17.611Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/sports-bet-94b22/webApps/-/config {"projectId":"sports-bet-94b22","appId":"1:629141819373:web:0fa93222f290df775d61e4","storageBucket":"sports-bet-94b22.appspot.com","locationId":"us-central","apiKey":"AIzaSyBL0p1jEQ1ALfj7WxK8vBuVKSgoOl9Tn6c","authDomain":"sports-bet-94b22.firebaseapp.com","messagingSenderId":"629141819373","measurementId":"G-F4SWWRECZ4"}
+[info] i  hosting: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] ✔  hosting: Local server: http://127.0.0.1:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5000\u001b[22m\u001b[24m"}}
+[debug] [2021-09-15T22:51:17.875Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2021-09-15T22:51:17.876Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2021-09-15T22:51:17.876Z] Starting Emulator UI with command {"binary":"node","args":["/root/.cache/firebase/emulators/ui-v1.6.2/server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/root/.cache/firebase/emulators/ui-v1.6.2/server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2021-09-15T22:51:18.544Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[info] i  functions: Watching "/mnt/c/Users/devin/OneDrive/Desktop/react/sports-bet/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/mnt/c/Users/devin/OneDrive/Desktop/react/sports-bet/functions\" for Cloud Functions..."}}
+[debug] [2021-09-15T22:51:18.845Z] [worker-pool] addWorker(~diagnostic~) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(~diagnostic~)"}}
+[debug] [2021-09-15T22:51:18.846Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key ~diagnostic~, total=1"}}
+[debug] [2021-09-15T22:51:18.847Z] [worker-pool] submitWork(triggerId=) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=)"}}
+[debug] [2021-09-15T22:51:18.848Z] [worker-~diagnostic~-be29b706-7d0d-4277-bb06-a0392fe2efdb]: Assigning socketPath: /tmp/fire_emu_309.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-be29b706-7d0d-4277-bb06-a0392fe2efdb]: Assigning socketPath: /tmp/fire_emu_309.sock"}}
+[debug] [2021-09-15T22:51:18.850Z] [worker-~diagnostic~-be29b706-7d0d-4277-bb06-a0392fe2efdb]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-be29b706-7d0d-4277-bb06-a0392fe2efdb]: BUSY"}}
+[debug] [2021-09-15T22:51:19.898Z] [runtime-status] [309] Functions runtime initialized. {"cwd":"/mnt/c/Users/devin/OneDrive/Desktop/react/sports-bet/functions","node_version":"15.4.0"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [309] Functions runtime initialized. {\"cwd\":\"/mnt/c/Users/devin/OneDrive/Desktop/react/sports-bet/functions\",\"node_version\":\"15.4.0\"}"}}
+[debug] [2021-09-15T22:51:19.901Z] [runtime-status] [309] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [309] Disabled runtime features: undefined"}}
+[debug] [2021-09-15T22:51:19.928Z] [runtime-status] [309] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.11.0","resolution":"/mnt/c/Users/devin/OneDrive/Desktop/react/sports-bet/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [309] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"9.11.0\",\"resolution\":\"/mnt/c/Users/devin/OneDrive/Desktop/react/sports-bet/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2021-09-15T22:51:19.950Z] [runtime-status] [309] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.14.1","resolution":"/mnt/c/Users/devin/OneDrive/Desktop/react/sports-bet/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [309] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.14.1\",\"resolution\":\"/mnt/c/Users/devin/OneDrive/Desktop/react/sports-bet/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2021-09-15T22:51:19.974Z] [runtime-status] [309] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.14.1","resolution":"/mnt/c/Users/devin/OneDrive/Desktop/react/sports-bet/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [309] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.14.1\",\"resolution\":\"/mnt/c/Users/devin/OneDrive/Desktop/react/sports-bet/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2021-09-15T22:51:19.975Z] [runtime-status] [309] Set PUBSUB_EMULATOR_HOST to 127.0.0.1:5005 {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [309] Set PUBSUB_EMULATOR_HOST to 127.0.0.1:5005"}}
+[debug] [2021-09-15T22:51:19.979Z] [runtime-status] [309] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [309] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2021-09-15T22:51:19.982Z] [runtime-status] [309] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.14.1","resolution":"/mnt/c/Users/devin/OneDrive/Desktop/react/sports-bet/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [309] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.14.1\",\"resolution\":\"/mnt/c/Users/devin/OneDrive/Desktop/react/sports-bet/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2021-09-15T22:51:21.359Z] [runtime-status] [309] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [309] Checked functions.config() {\"config\":{}}"}}
+[debug] [2021-09-15T22:51:21.360Z] [runtime-status] [309] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.14.1","resolution":"/mnt/c/Users/devin/OneDrive/Desktop/react/sports-bet/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [309] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.14.1\",\"resolution\":\"/mnt/c/Users/devin/OneDrive/Desktop/react/sports-bet/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2021-09-15T22:51:21.363Z] [runtime-status] [309] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.14.1","resolution":"/mnt/c/Users/devin/OneDrive/Desktop/react/sports-bet/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [309] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.14.1\",\"resolution\":\"/mnt/c/Users/devin/OneDrive/Desktop/react/sports-bet/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2021-09-15T22:51:21.369Z] [runtime-status] [309] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.11.0","resolution":"/mnt/c/Users/devin/OneDrive/Desktop/react/sports-bet/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [309] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"9.11.0\",\"resolution\":\"/mnt/c/Users/devin/OneDrive/Desktop/react/sports-bet/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2021-09-15T22:51:21.371Z] [runtime-status] [309] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.14.1","resolution":"/mnt/c/Users/devin/OneDrive/Desktop/react/sports-bet/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [309] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.14.1\",\"resolution\":\"/mnt/c/Users/devin/OneDrive/Desktop/react/sports-bet/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2021-09-15T22:51:21.373Z] [runtime-status] [309] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.11.0","resolution":"/mnt/c/Users/devin/OneDrive/Desktop/react/sports-bet/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [309] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"9.11.0\",\"resolution\":\"/mnt/c/Users/devin/OneDrive/Desktop/react/sports-bet/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2021-09-15T22:51:21.409Z] [runtime-status] [309] initializeApp(DEFAULT) {"storageBucket":"sports-bet-94b22.appspot.com","projectId":"sports-bet-94b22"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [309] initializeApp(DEFAULT) {\"storageBucket\":\"sports-bet-94b22.appspot.com\",\"projectId\":\"sports-bet-94b22\"}"}}
+[info] ✔  functions[us-central1-gameData]: http function initialized (http://127.0.0.1:5001/sports-bet-94b22/us-central1/gameData). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/sports-bet-94b22/us-central1/gameData)."}}
+[info] ✔  functions[us-central1-playerData]: http function initialized (http://127.0.0.1:5001/sports-bet-94b22/us-central1/playerData). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/sports-bet-94b22/us-central1/playerData)."}}
+[info] ✔  functions[us-central1-readInSeasonalData]: http function initialized (http://127.0.0.1:5001/sports-bet-94b22/us-central1/readInSeasonalData). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/sports-bet-94b22/us-central1/readInSeasonalData)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000                │
+└─────────────────────────────────────────────────────────────┘
+
+┌────────────────┬────────────────┬─────────────────────────────────┐
+│ Emulator       │ Host:Port      │ View in Emulator UI             │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Authentication │ 127.0.0.1:9099 │ http://127.0.0.1:4000/auth      │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Functions      │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Firestore      │ 127.0.0.1:8080 │ http://127.0.0.1:4000/firestore │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Hosting        │ 127.0.0.1:5000 │ n/a                             │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Pub/Sub        │ 127.0.0.1:5005 │ n/a                             │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Storage        │ 127.0.0.1:9199 │ http://127.0.0.1:4000/storage   │
+└────────────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2021-09-15T22:51:23.756Z] [worker-~diagnostic~-be29b706-7d0d-4277-bb06-a0392fe2efdb]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-be29b706-7d0d-4277-bb06-a0392fe2efdb]: IDLE"}}
+[debug] [2021-09-16T00:54:42.704Z] Received signal SIGHUP 1
+[info]  
+[info] i  emulators: Received SIGHUP for the first time. Starting a clean shutdown. 
+[info] i  emulators: Please wait for a clean shutdown or send the SIGHUP signal again to stop right now. 
+[debug] [2021-09-16T00:54:42.715Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:162:15)
+    at writeGeneric (node:internal/stream_base_commons:153:3)
+    at WriteStream.Socket._writeGeneric (node:net:774:11)
+    at WriteStream.Socket._write (node:net:786:8)
+    at writeOrBuffer (node:internal/streams/writable:388:12)
+    at WriteStream.Writable.write (node:internal/streams/writable:333:10)
+    at Console.log (/usr/local/share/.config/yarn/global/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/usr/local/share/.config/yarn/global/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/usr/local/share/.config/yarn/global/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/usr/local/share/.config/yarn/global/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/usr/local/share/.config/yarn/global/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/usr/local/share/.config/yarn/global/node_modules/readable-stream/lib/_stream_readable.js:681:20)
+    at DerivedLogger.emit (node:events:388:22)
+    at DerivedLogger.EventEmitter.emit (node:domain:470:12)
+    at addChunk (/usr/local/share/.config/yarn/global/node_modules/readable-stream/lib/_stream_readable.js:298:12)
+    at readableAddChunk (/usr/local/share/.config/yarn/global/node_modules/readable-stream/lib/_stream_readable.js:280:11)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2021-09-16T00:54:42.718Z] [worker-~diagnostic~-be29b706-7d0d-4277-bb06-a0392fe2efdb]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-be29b706-7d0d-4277-bb06-a0392fe2efdb]: exited"}}
+[debug] [2021-09-16T00:54:42.718Z] [worker-~diagnostic~-be29b706-7d0d-4277-bb06-a0392fe2efdb]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-be29b706-7d0d-4277-bb06-a0392fe2efdb]: FINISHED"}}
+[info] i  emulators: Shutting down emulators. {"metadata":{"emulator":{"name":"hub"},"message":"Shutting down emulators."}}
+[info] i  ui: Stopping Emulator UI {"metadata":{"emulator":{"name":"ui"},"message":"Stopping Emulator UI"}}
+[warn] ⚠  Emulator UI has exited upon receiving signal: SIGINT 
+[info] i  functions: Stopping Functions Emulator {"metadata":{"emulator":{"name":"functions"},"message":"Stopping Functions Emulator"}}
+[info] i  hosting: Stopping Hosting Emulator {"metadata":{"emulator":{"name":"hosting"},"message":"Stopping Hosting Emulator"}}
+[info] i  firestore: Stopping Firestore Emulator {"metadata":{"emulator":{"name":"firestore"},"message":"Stopping Firestore Emulator"}}
+[debug] [2021-09-16T00:54:42.730Z] *** shutting down gRPC server since JVM is shutting down
+ {"metadata":{"emulator":{"name":"firestore"},"message":"*** shutting down gRPC server since JVM is shutting down\n"}}
+[debug] [2021-09-16T00:54:42.855Z] *** server shut down
+ {"metadata":{"emulator":{"name":"firestore"},"message":"*** server shut down\n"}}
